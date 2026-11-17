@@ -1,0 +1,57 @@
+/* Shared enquiry and service-page layer; preserves the original navy/gold site. */
+.skip-link{position:fixed;left:16px;top:-80px;z-index:9999;background:#fff;color:#0a1e3d;padding:12px 20px;border:2px solid #c5960c}
+.skip-link:focus{top:12px}
+:focus-visible{outline:3px solid #c5960c;outline-offset:4px}
+button.nav-toggle{background:none;border:0;padding:10px;color:inherit;cursor:pointer}
+.service-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.service-links a{display:inline-block;padding:10px 16px;border:1px solid var(--gray-200);border-radius:8px;background:#fff;color:var(--navy);font-weight:600}
+.service-links a:hover{border-color:var(--gold);background:var(--gold-pale)}
+.enquiry-section{background:var(--navy);color:#fff}
+.enquiry-section .section-label{color:var(--gold-light)}
+.enquiry-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:start}
+.enquiry-intro p{color:#dce3ed;line-height:1.8}
+.enquiry-intro ul{padding-left:20px;margin:22px 0;line-height:2}
+.enquiry-intro a:not(.btn){color:var(--gold-pale);text-decoration:underline}
+.quote-form{background:#fff;color:var(--navy);border-radius:20px;padding:30px;box-shadow:var(--shadow-lg)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field-full{grid-column:1/-1}
+.quote-form label{display:block;font-size:.9rem;font-weight:600;margin-bottom:7px}
+.quote-form input,.quote-form select,.quote-form textarea{display:block;width:100%;min-width:0;font:inherit;font-size:16px;border:1px solid #aab2c0;border-radius:7px;padding:11px 12px;background:#fff;color:var(--navy)}
+.quote-form textarea{resize:vertical;min-height:100px}
+.quote-form button{border:0;cursor:pointer;font:inherit;margin-top:20px;max-width:100%;white-space:normal}
+.form-note{font-size:.85rem;line-height:1.6;margin:14px 0 0;color:#4a5168}
+.quote-next{display:block;font-weight:600;margin-top:14px;color:#0a1e3d;text-decoration:underline}
+.quote-next[hidden]{display:none}
+.faq-section{background:var(--gray-50)}
+.faq-list{max-width:850px;margin-top:30px}
+.faq-list details{background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:20px 24px;margin-bottom:12px}
+.faq-list summary{font-weight:700;cursor:pointer;line-height:1.6}
+.faq-list details p{margin:14px 0 0;color:var(--gray-600);line-height:1.8}
+.service-page .navbar{background:var(--navy)}
+.page-hero{padding:150px 0 60px;background:var(--navy);color:#fff}
+.page-hero .breadcrumb{font-size:.9rem;margin-bottom:26px;color:#dce3ed}
+.page-hero .breadcrumb a{color:var(--gold-pale);text-decoration:underline}
+.page-hero h1{font-size:clamp(2rem,4.5vw,3.5rem);max-width:930px;line-height:1.16;margin-bottom:24px}
+.page-hero .page-lead{font-size:1.12rem;max-width:790px;line-height:1.9;color:#dce3ed}
+.page-hero .btn{margin-top:14px}
+.page-hero h1,.enquiry-section h2,.service-page .footer h3{color:#fff}
+.service-body{padding:64px 0}
+.article-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(240px,1fr);gap:52px}
+.article-copy h2{font-size:1.55rem;margin:30px 0 16px}
+.article-copy h2:first-child{margin-top:0}
+.article-copy p,.article-copy li{line-height:1.9;color:var(--gray-600)}
+.article-copy ul,.article-copy ol{padding-left:23px;margin-bottom:24px}
+.article-copy a{color:#745700;text-decoration:underline}
+.service-aside img{width:100%;height:auto;border-radius:16px;margin-bottom:22px}
+.service-aside{min-width:0}
+.aside-card{background:var(--gray-50);padding:26px;border-radius:14px}
+.aside-card h2{font-size:1.15rem;margin-bottom:12px}
+.aside-card p{font-size:.95rem;color:var(--gray-600);line-height:1.8}
+.aside-card a{color:#745700;text-decoration:underline;overflow-wrap:anywhere}
+.related-section{padding:40px 0 64px;background:var(--gray-50)}
+.related-section h2{font-size:1.5rem}
+.service-page .footer{padding-bottom:90px}
+.service-page .nav-links{gap:22px}
+@media(max-width:800px){.enquiry-grid,.article-grid{grid-template-columns:1fr;gap:30px}.page-hero{padding:125px 0 45px}.quote-form{padding:24px}.service-aside img{max-height:340px;object-fit:cover}.enquiry-section,.faq-section{padding:65px 0}}
+@media(max-width:480px){.form-grid{grid-template-columns:1fr}.field-full{grid-column:auto}.quote-form{padding:20px}.page-hero h1{font-size:2rem}.service-links{gap:9px}.service-links a{font-size:.9rem;padding:9px 12px}.faq-list details{padding:18px}.service-page .nav-logo-sub{font-size:.6rem}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}}
