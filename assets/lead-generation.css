@@ -1,6 +1,7 @@
 /* Shared enquiry and service-page layer; preserves the original navy/gold site. */
 .skip-link{position:fixed;left:16px;top:-80px;z-index:9999;background:#fff;color:#0a1e3d;padding:12px 20px;border:2px solid #c5960c}
 .skip-link:focus{top:12px}
+.hero-content{width:100%;padding-left:24px;padding-right:24px}
 :focus-visible{outline:3px solid #c5960c;outline-offset:4px}
 button.nav-toggle{background:none;border:0;padding:10px;color:inherit;cursor:pointer}
 .service-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
@@ -56,4 +57,5 @@ button.nav-toggle{background:none;border:0;padding:10px;color:inherit;cursor:poi
 .service-page .nav-links{gap:22px}
 @media(max-width:800px){.enquiry-grid,.article-grid{grid-template-columns:1fr;gap:30px}.page-hero{padding:125px 0 45px}.quote-form{padding:24px}.service-aside img{max-height:340px;object-fit:cover}.enquiry-section,.faq-section{padding:65px 0}}
 @media(max-width:480px){.form-grid{grid-template-columns:1fr}.field-full{grid-column:auto}.quote-form{padding:20px}.page-hero h1{font-size:2rem}.service-links{gap:9px}.service-links a{font-size:.9rem;padding:9px 12px}.faq-list details{padding:18px}.service-page .nav-logo-sub{font-size:.6rem}}
+@media(max-width:480px){.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.stat-item{min-width:0}.stat-number{font-size:2.3rem}.hero-badge{font-size:.68rem;letter-spacing:1px;padding:8px 12px}.hero-actions .btn{max-width:100%;padding-left:22px;padding-right:22px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1!important;transform:none!important}}
